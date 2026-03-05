@@ -3,7 +3,7 @@ class Recipe {
   final String imagePath;
   final List<String> ingredients;
   final String instructions;
-  bool isFavorite;      // grad feature
+  bool isFavorite;
 
   Recipe({
     required this.name,
