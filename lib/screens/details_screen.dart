@@ -19,12 +19,18 @@ class DetailsScreen extends StatelessWidget {
           children: [
 
             // Recipe Image
-            Image.asset(
-              recipe.imagePath,
-              height: 220,
-              width: double.infinity,
-              fit: BoxFit.cover,
-            ),
+            ClipRRect(
+  borderRadius: const BorderRadius.only(
+    bottomLeft: Radius.circular(20),
+    bottomRight: Radius.circular(20),
+  ),
+  child: Image.asset(
+    recipe.imagePath,
+    height: 350,
+    width: double.infinity,
+    fit: BoxFit.fitHeight,
+  ),
+),
 
             const SizedBox(height: 16),
 
